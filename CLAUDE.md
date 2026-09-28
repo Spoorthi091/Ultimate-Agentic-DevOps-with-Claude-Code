@@ -88,3 +88,8 @@ aws s3 sync . s3://$BUCKET_NAME --exclude "terraform/*" --exclude ".git/*" --exc
 - GitHub Actions uses OIDC — no stored AWS access keys
 - All infrastructure changes go through Terraform — never modify AWS resources manually
 - Site content changes deploy automatically via GitHub Actions on push to main
+## 6. No JavaScript / Frameworks
+
+This project must remain a static HTML and CSS website. Do not introduce JavaScript, React, Vue, Angular, Vite, npm, Node.js, or other frontend frameworks or build tools. Do not convert the existing HTML pages into a JavaScript-based application unless the user explicitly overrides this instruction.
+
+When implementing or modifying functionality, use the existing HTML and CSS approach whenever possible. Preserve the current static-site architecture and avoid adding unnecessary dependencies.
